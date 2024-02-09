@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>स्वागतम्</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./fire.css" />
+</head>
+
+<body>
+  <div class="pyro" id="fireworkContainer" style="display: none; position: relative; z-index:7;">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+  <!-- <div>
+    <img src="assets/curtain1.jpeg" id="curtain1">
+    <img src="assets/curtain2.jpeg" id="curtain2">
+  </div> -->
+  <div id="wrapper">
+  <img id="logoImg" style="width: 200px; margin:15px;" alt="" src="assets/logo.png" />
+  <img id="logoImgright" style="width: 200px; margin:15px;" alt="" src="assets/logo.png" />
+  <img id="coverImg" src="assets/ladies.png" />
+  <div id="mainText">
+    <h2 id="txt" class="txt3" style="font-family: BLKCHCRY, serif; font-size: 60px !important; padding-top: 20px;">Honouring</h2>
+    <!-- <h2 id="txt" class="txt10" style="font-family: BLKCHCRY, serif; font-size: 60px !important;">Proud</h2> -->
+    <h2 id="txt" class="txt30" style="font-family: BLKCHCRY, serif; font-size: 30px !important;">for</h2>
+    <!-- <h2 id="txt" class="txt11" style="font-family: BLKCHCRY, serif; font-size: 60px !important;" >of</h2> -->
+    <h2 id="txt" class="txt12" style="font-family: BLKCHCRY, serif; font-size: 60px !important;">Proud of Rajasthan</h2>
+    <!-- <h2 id="txt" class="txt2" style="font-size: 40px !important;">Honor</h2> -->
+    <h2 id="txt" class="txt5" style="font-family: Lucida, serif;">(Books of Records) Awards</h2>
+    
+  </div>
+<!-- <p id="venueText">सर्वेभ्यः स्वागतं यत्र समाजः समृद्धिमान्।</p> -->
+
+  <audio id="audio">
+    <source src="assets/y2mate.bz - clapping-hand-sound-effect.mp3" type="audio/mpeg">
+  </audio>
+  <img src="assets/Pradeep-removebg-preview.png"  class="circular-rotation" id="rotatingImage">
+  <h4 id="txt" class="txt21">Shri Pradeep <br> Mittal Ji</h4>
+  <h4 id="txt" class="txt22">National Chairman ABAS</h4>
+  <img src="assets/denik.png" style="border: 4px solid black; border-radius: 10px;"  class="circular-rotation1">
+  <img src="assets/harsh-removebg-preview.png"  class="circular-rotation2" id="rotatingImage">
+  <h4 id="txt" class="txt23">Shri Harsh Choudhary Ji</h4>
+  <h4 id="txt" class="txt24">Chief-Editor Dainik navajyotl</h4>
+  <!-- <h1 id="name" style="font-size: 40px;">Shri Kali Charan Ji Saraf</h1> -->
+  <!-- <h3 id="post" style="font-size: 25px;">Senior Most (8th Time Elected)</h3> -->
+  <!-- <h6 id="post1" style="font-size: 25px;"></h6> -->
+  <!-- <p id="post2" style="font-size: 25px;" style="font-family: ALGER, serif;">Member of 16th House of </br> Legislative Assembly of </br> <span style="font-weight: 700; font-style: bold;">RAJASTHAN</span></p> -->
+  <a id="btn" href="#"><img style="width:380px;" src="assets/btn-removebg-preview.png" alt=""></a>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    $("#logoImg").animate({width: 200});
+    $("#logoImgright").animate({width: 200});
+    $(".txt1").fadeOut(1000);
+      $(".txt2").fadeIn(4000);
+      $(".txt3").fadeIn(4000);
+      $("#rotatingImage").fadeIn(4000);
+      $(".by").fadeIn(4000);
+      $("#name").fadeIn(4000);
+      $("#post").fadeIn(4000);
+      $("#btn").fadeIn(4000);
+      function open_curtain() {
+    var audio = document.getElementById('audio');
+    audio.play();
+
+    var fireworkContainer = document.getElementById('fireworkContainer');
+    fireworkContainer.style.display = 'block';
+    cutFunc();
+  }
+    document.addEventListener('click', open_curtain);
+</script>
+<div class="firework-container" onclick="createFirework(event)"></div>
+</body>
+
+</html>
